@@ -20,3 +20,6 @@ Sitios de Referencia:
   -La página web con link https://www.musiciansfriend.com/ se escogió en primer lugar porque los elementos que venden son afines con los que pensamos ofrecen en la página web, en esta página se tienen en cuenta los diferentes descuentos y categorías similares a las que queremos plantear.
   -La página web con link https://www.normans.co.uk/ se escogió por la afinidad con el tema del mercado (instrumentos musicales), además posee menús desplegables por categoría de instrumentos, y el carrito de compras.
   -La página web con link https://www.gear4music.com/ se seleccionó debido a que cumplía con el tema de ventas, además de las categorías generales por tipo de instrumento se encuentra la opción de seleccionar los instrumentos por marca, además posee diversos métodos de financiación.
+
+link de trello: https://trello.com/b/L2lqh0KV/tareas-grupo-08-digital-house
+link de repositorio git: https://github.com/kristian9611/melodyapp.git
