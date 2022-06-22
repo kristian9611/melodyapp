@@ -19,7 +19,7 @@ header {
     height: 13vw;
     left: 540px;
 }
-img {
+header img {
     width: auto;
     height: auto;
     max-width: 200px;
@@ -51,7 +51,7 @@ img {
 footer{
     height: 5vh;
     bottom: 0;
-    background-color:rgb(250, 250, 250);
+    background-color: white;
 }
 footer h4{
     text-align: center;
@@ -76,7 +76,7 @@ footer ul{
 .space{
     height: 20px;
     width: 100%;
-    background-color: #F9F6EE;
+    background-color: white;
 
 }
 
