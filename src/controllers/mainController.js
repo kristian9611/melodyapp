@@ -4,4 +4,4 @@ const controllers = {
   },
 };
 
-module.exports = controller;
+module.exports = controllers;
