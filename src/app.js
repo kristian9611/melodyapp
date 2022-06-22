@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const mainRouter = require("./routers/main");
+const path = require("path");
 
 app.use(express.static("public"));
 
