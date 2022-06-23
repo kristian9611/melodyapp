@@ -17,7 +17,7 @@
         <section>
             <div class="tleft">
             <h2>Producto</h2>
-            <h2>Cantidad</h2>
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;Cantidad</h2>
             <h2>Total</h2>
             </div>
             <div class="tright">
@@ -26,18 +26,103 @@
            </section>
            <section>
             <div class="imleft">
-            <div> <img src="/img/clarinete.png" alt="Clarinete"></div>
-            <div class="cent"><i class="fa-solid fa-minus"></i>
-              <p>2</p>
-            <i class="fa-solid fa-plus"></i></div>
-            <div>USD 500</div>
+            <img src="/img/clarinete.png" alt="Clarinete">
+                     
+            <div class="cent">
+              <button id="disminuir"   onclick="carrito(this)" value="disminuir"><i class="fa-solid fa-minus"></i></button>
+              <p id='contador'></p>
+              <button id="aumentar"  onclick="carrito(this)"value="aumentar"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="precio"> 
+              <h3>USD &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;</h3>
+            <p1><h3 id='precioparcial'></h3></p1>
+            </div>
             </div>
             <div class="tright">
-            <h3>USD 500</h3>
+             <div class="precio"> 
+             <h2>USD &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; </h2>
+             <p1><h2 id='preciototal'></h2></p1>
+             </div>
            </div>
            </section>
-          
+           <section>
+            <div class="imleft">
+              <img src="/img/saxofon.png" alt="Saxofon">
+                       
+              <div class="cent">
+                <button id="disminuir1"   onclick="carrito1(this)" value="disminuir1"><i class="fa-solid fa-minus"></i></button>
+                <p id='contador1'></p>
+                <button id="aumentar1"  onclick="carrito1(this)"value="aumentar1"><i class="fa-solid fa-plus"></i></button>
+              </div>
+              <div class="precio"> 
+                <h3>USD &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp;</h3>
+              <p1><h3 id='precioparcial1'></h3></p1>
+              </div>
+              </div>
+            <div class="tright">
+            <h3>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;</h3>
+           </div>
+           </section>
+                    
     <div class="space"></div>
     <%- include('./partials/footer')%> </div>
+    <script type="text/javascript">
+      let valor=0;
+      let precio=200;
+      let pp=0;
+      let pt=0;
+      let valor1=0;
+      let precio1=300;
+      let pp1=0;
+      document.getElementById("contador").textContent = 0;
+      document.getElementById("precioparcial").textContent = 0;
+      document.getElementById("preciototal").textContent = 0;
+      document.getElementById("contador1").textContent = 0;
+      document.getElementById("precioparcial1").textContent = 0;
+          function carrito(boton){
+          var contador = document.getElementById("contador").value;
+          if (boton.value=='aumentar') {
+              valor++
+          }else if(valor!=0){
+              valor--
+          }
+          pp=valor*precio;
+     
+          document.getElementById("contador").textContent = valor;
+          document.getElementById("precioparcial").textContent = pp; 
+          return pp;
+        
+      }
+     
+    
+          function carrito1(boton1){
+          var contador1 = document.getElementById("contador1").value;
+          if (boton1.value=='aumentar1') {
+              valor1++
+          }else if(valor1!=0){
+              valor1--
+          }
+          
+         pp1=valor1*precio1;
+         document.getElementById("contador1").textContent = valor1 ;  
+         document.getElementById("precioparcial1").textContent = pp1;
+         var res =  document.getElementById("contador1").textContent = valor1 ;  
+         return 5;
+                 
+      }
+      var res =carrito1("aumentar");
+      function fun(x, y)  
+      {  
+      return x * y;  
+      }  
+      document.write(res);  
+      
+        
+          pt=res;
+          document.getElementById("preciototal").textContent = pt;
+          
+        
+     
+      </script>
   </body>
 </html>
