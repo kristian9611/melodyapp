@@ -19,7 +19,7 @@ header {
     height: 13vw;
     left: 540px;
 }
-img {
+header img {
     width: auto;
     height: auto;
     max-width: 200px;
@@ -51,12 +51,34 @@ img {
 footer{
     height: 5vh;
     bottom: 0;
-    background-color:rgb(250, 250, 250);
+    background-color: white;
 }
-footer h2{
-    position: absolute;
-    left: 42%;
-    
+footer h4{
+    text-align: center;
+    font-size: 10px;
+}
+footer h3{
+    font-size: 14px;
+}
+.iconf{
+    font-size: 40px;
+    text-align: center;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+       
+}
+footer ul{
+    font-size: 12px;   
+    list-style: none; 
+}
+.space{
+    height: 20px;
+    width: 100%;
+    background-color: white;
 
 }
+
+
 
